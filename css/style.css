@@ -46,7 +46,6 @@ header li {
     border-bottom: 1px dotted #333;
 }
 
-
 img {
     width: 100%;
     height: auto;
@@ -80,4 +79,22 @@ img:not([srcset]:not([src])) {
     }
 }
 
+/* Specific iPhone 6 portrait fix */
+@media (width: 375px) {
+    .products li {
+        width: 187px;
+    }
+    .products li:nth-child(odd) {
+        margin-right: 1px;
+    }
+}
 
+/* Specific iPhone 6 landscape fix */
+@media (width: 667px) {
+    .products li {
+        width: 333px;
+    }
+    .products li:nth-child(odd) {
+        margin-right: 1px;
+    }
+}
