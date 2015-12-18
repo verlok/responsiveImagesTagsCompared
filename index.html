@@ -10,6 +10,7 @@
         // Picture element HTML5 shiv
         document.createElement("picture");
     </script>
+    <script src="js/vendor/picturePolyfill/dist/picturePolyfill.min.js" async></script>
 </head>
 <body>
 <div class="container">
@@ -20,42 +21,8 @@
         <h2>Picture tag</h2>
         <ul class="products">
             <li><picture>
-                <source media="(min-width: 320px)"
-                        srcset="http://placehold.it/320x372 1x, http://placehold.it/320x372 2x">
-                <source media="(min-width: 375px)"
-                        srcset="http://placehold.it/374x435 1x, http://placehold.it/374x435 2x">
-                <source media="(min-width: 568px)"
-                        srcset="http://placehold.it/568x660 1x, http://placehold.it/568x660 2x">
-                <source media="(min-width: 667px)"
-                        srcset="http://placehold.it/666x774 1x, http://placehold.it/666x774 2x">
-                <source media="(min-width: 768px)"
-                        srcset="http://placehold.it/472x549 1x, http://placehold.it/472x549 2x">
-                <source media="(min-width: 1024px)"
-                        srcset="http://placehold.it/241x280 1x, http://placehold.it/482x560 2x">
-                <source media="(min-width: 1280px)"
-                        srcset="http://placehold.it/305x355 1x, http://placehold.it/610x709 2x">
-                <img src="http://placehold.it/305x355" alt="A product image">
-            </picture></li>
-            <li><picture>
                 <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 1x, http://placehold.it/320x372 2x">
-                <source media="(max-width: 375px)"
-                        srcset="http://placehold.it/374x435 1x, http://placehold.it/374x435 2x">
-                <source media="(max-width: 568px)"
-                        srcset="http://placehold.it/568x660 1x, http://placehold.it/568x660 2x">
-                <source media="(max-width: 667px)"
-                        srcset="http://placehold.it/666x774 1x, http://placehold.it/666x774 2x">
-                <source media="(max-width: 768px)"
-                        srcset="http://placehold.it/472x549 1x, http://placehold.it/472x549 2x">
-                <source media="(max-width: 1024px)"
-                        srcset="http://placehold.it/241x280 1x, http://placehold.it/482x560 2x">
-                <source media="(min-width: 1280px)"
-                        srcset="http://placehold.it/305x355 1x, http://placehold.it/610x709 2x">
-                <img src="http://placehold.it/305x355" alt="A product image">
-            </picture></li>
-            <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
+                        srcset="http://placehold.it/160x186 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -105,8 +72,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -122,8 +87,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -139,8 +102,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -156,8 +117,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -173,8 +132,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -190,8 +147,6 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -207,8 +162,36 @@
                 <img src="http://placehold.it/305x355" alt="A product image">
             </picture></li>
             <li><picture>
-                <source media="(max-width: 320px)"
-                        srcset="http://placehold.it/320x372 2x">
+                <source media="(max-width: 375px)"
+                        srcset="http://placehold.it/374x435 2x">
+                <source media="(max-width: 568px)"
+                        srcset="http://placehold.it/568x660 2x">
+                <source media="(max-width: 667px)"
+                        srcset="http://placehold.it/666x774 2x">
+                <source media="(max-width: 768px)"
+                        srcset="http://placehold.it/472x549 2x">
+                <source media="(max-width: 1024px)"
+                        srcset="http://placehold.it/241x280 1x, http://placehold.it/482x560 2x">
+                <source media="(min-width: 1280px)"
+                        srcset="http://placehold.it/305x355 1x, http://placehold.it/610x709 2x">
+                <img src="http://placehold.it/305x355" alt="A product image">
+            </picture></li>
+            <li><picture>
+                <source media="(max-width: 375px)"
+                        srcset="http://placehold.it/374x435 2x">
+                <source media="(max-width: 568px)"
+                        srcset="http://placehold.it/568x660 2x">
+                <source media="(max-width: 667px)"
+                        srcset="http://placehold.it/666x774 2x">
+                <source media="(max-width: 768px)"
+                        srcset="http://placehold.it/472x549 2x">
+                <source media="(max-width: 1024px)"
+                        srcset="http://placehold.it/241x280 1x, http://placehold.it/482x560 2x">
+                <source media="(min-width: 1280px)"
+                        srcset="http://placehold.it/305x355 1x, http://placehold.it/610x709 2x">
+                <img src="http://placehold.it/305x355" alt="A product image">
+            </picture></li>
+            <li><picture>
                 <source media="(max-width: 375px)"
                         srcset="http://placehold.it/374x435 2x">
                 <source media="(max-width: 568px)"
@@ -226,8 +209,6 @@
         </ul>
     </section>
 </div>
-<!--<script src="js/vendor/picturePolyfill/dist/picturePolyfill.min.js"></script>-->
-<script src="js/vendor/picturePolyfill/src/picturePolyfill.js"></script>
-<!--<script src="js/vendor/picturefill/dist/picturefill.min.js"></script>-->
+
 </body>
 </html>
