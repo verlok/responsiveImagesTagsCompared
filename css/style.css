@@ -55,7 +55,7 @@ img {
     display: block;
 }
 
-img:not([srcset]:not([src])) {
+img:not([srcset]):not([src]) {
     visibility: hidden;
 }
 
