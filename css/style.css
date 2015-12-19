@@ -101,3 +101,17 @@ img:not([srcset]):not([src]) {
         margin-right: 1px;
     }
 }
+
+.result {
+    padding: 0 30px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
