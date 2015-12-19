@@ -10,7 +10,7 @@
         // Picture element HTML5 shiv
         document.createElement("picture");
     </script>
-    <script src="js/vendor/picturePolyfill/dist/picturePolyfill.min.js" async></script>
+    <script src="js/vendor/picturefill/dist/picturefill.min.js" async></script>
 </head>
 <body>
 <div class="container">
@@ -19,7 +19,7 @@
     </header>
     <section>
         <h2>Picture tag</h2>
-        <ul class="products">
+        <ul class="products cf">
             <li>
                 <picture>
                     <source media="(max-width: 320px)"
@@ -252,7 +252,7 @@
     </section>
     <section>
         <h2>Img Tag</h2>
-        <ul class="products">
+        <ul class="products cf">
             <li><img src="http://placehold.it/305x355"
                      srcset="http://placehold.it/241x280 241w, http://placehold.it/305x355 305w, http://placehold.it/320x372 320w, http://placehold.it/374x435 374w, http://placehold.it/472x549 472w, http://placehold.it/482x560 482w, http://placehold.it/568x660 578w, http://placehold.it/610x709 610w, http://placehold.it/666x774 666w"
                      sizes="(min-width: 1280px) 305px, (min-width: 1024px) calc((100vw - 60px) / 4), (min-width: 768px) calc((100vw - 60px) / 3), 50vw"
@@ -302,6 +302,11 @@
                      sizes="(min-width: 1280px) 305px, (min-width: 1024px) calc((100vw - 60px) / 4), (min-width: 768px) calc((100vw - 60px) / 3), 50vw"
                      alt="A product image"></li>
         </ul>
+    </section>
+    <section class="result">
+        <h1>Result</h1>
+        <p>When the images have the same ratio over multiple media queries / resolutions, <code>img</code> with <code>srcset</code> and <code>sizes</code> wins.</p>
+        <p>The reason is that you have to write much less code to support much more devices and screen densities. Given the ability to use CSS <code>calc()</code> function in the length expression of the <code>sizes</code> attribute, we can do even complex calculations to define the right image to use even in complex layouts.</p>
     </section>
 </div>
 
