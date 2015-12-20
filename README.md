@@ -1,6 +1,8 @@
 # responsiveImagesTagsCompared
 
-Comparing picture against img with srcset + sizes attributes
+## What is happening here
+
+I'm trying to find out limits of the `img` tag (with `srcset` + `sizes` attributes) comparing it to the `picture` tag in a full responsive, non full-width page layout.
 
 ## Product image sizes and spacing by device & orientation
 
