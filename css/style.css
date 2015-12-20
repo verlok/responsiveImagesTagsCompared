@@ -104,6 +104,7 @@ img:not([srcset]):not([src]) {
 
 .result {
     padding: 0 30px;
+    text-align: center;
 }
 
 .cf:before,
